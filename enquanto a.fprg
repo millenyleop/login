@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value="principal"/>
+        <attribute name="authors" value="Prof. Marcio Denadai"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-13 03:24:25 "/>
+        <attribute name="created" value="SW5zdHJ1dG9yZXM7RVNONTEyTjEyNjI4NTY7MjAyMy0wNC0wNjsiMTA6NDM6MDMgIjszMjEx"/>
+        <attribute name="edited" value="SW5zdHJ1dG9yZXM7RVNONTEyTjEyNjI4NTY7MjAyMy0wNC0wNjsiMTI6NDY6MjYgIjsxMDszMzc3"/>
+        <attribute name="edited" value="MjMxNDc5NTQ7RVNONTEyTjEyNjI4MjY7MjAyMy0wNC0xMzsiMDI6Mzc6NTIgIjs4OzI1NDY="/>
+        <attribute name="edited" value="MjMxNDgwMDk7RVNONTEyTjEyNjI4Mzk7MjAyMy0wNC0xMzsiMDM6MjQ6MjUgIjsxOzI1MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="user" type="String" array="False" size=""/>
+            <declare name="password" type="String" array="False" size=""/>
+            <declare name="recorrente" type="Boolean" array="False" size=""/>
+            <assign variable="recorrente" expression="true"/>
+            <while expression="recorrente">
+                <output expression="&quot;Digite o seu nome de usu&#225;rio!&quot;" newline="True"/>
+                <input variable="user"/>
+                <output expression="&quot;Digite sua senha!&quot;" newline="True"/>
+                <input variable="password"/>
+                <if expression="user==&quot;mimi&quot;">
+                    <then>
+                        <if expression="password==&quot;thur&quot;">
+                            <then>
+                                <output expression="&quot;Voc&#234; ser&#225; redirecionado ao seu perfil.&quot;" newline="True"/>
+                                <assign variable="recorrente" expression="false"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Usu&#225;rio ou senha inv&#225;lido.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Usu&#225;rio ou senha inv&#225;lido.&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
